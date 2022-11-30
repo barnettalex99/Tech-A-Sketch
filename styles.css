@@ -31,6 +31,10 @@ h1{
 }
 
 .screen-container{
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
     background-color: white;
     height: 350px;
     width: 350px;
@@ -44,3 +48,12 @@ button{
     width: 60px;
     border-radius: 30px;
 }
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  .grid-item {
+    text-align: center;
+  }
